@@ -108,7 +108,7 @@
         </div>
 
         <form class="contacto-form" action="https://formsubmit.co/claudi.garciurba@alum.uca.es" method="POST">
-            <input type="hidden" name="_next" value="https://ucaclau.github.io/web-framework-ecografias/">
+            <input type="hidden" name="_next" value="https://ucaclau.github.io/web-framework-ecografias/?enviado=exito">
             <div class="form-group">
                 <label for="nombre">Nombre completo</label>
                 <input type="text" id="nombre" name="nombre" required placeholder="Nombre">
@@ -151,6 +151,28 @@
             </div>
         </div>
     </footer>
-
+    
+    <script>
+        // Comprobamos si la URL de la barra del navegador contiene "?enviado=exito"
+        const urlParams = new URLSearchParams(window.location.search);
+        
+        if (urlParams.get('enviado') === 'exito') {
+            const banner = document.createElement('div');
+            banner.className = 'banner-exito';
+            banner.textContent = '¡Mensaje enviado con éxito! Nos pondremos en contacto pronto.';
+            document.body.appendChild(banner);
+            
+            setTimeout(() => {
+                banner.classList.add('mostrar');
+            }, 100);
+            
+            setTimeout(() => {
+                banner.classList.remove('mostrar');
+                // Esto limpia el "?enviado=exito" de la barra de direcciones
+                window.history.replaceState({}, document.title, window.location.pathname);
+            }, 4000);
+        }
+    </script>
+    
 </body>
 </html>
