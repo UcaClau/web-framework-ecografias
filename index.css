@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Variables globales */
+:root {
+    --color-blancoSuave: #FDFDFD;
+    --color-blancoPuro: #FFFFFF;
+    --color-negroPuro: #000000;
+    --color-grisTerminal: #424242;
+    --color-grisMenu: #E0E0E0;
+    --color-verdeClinico: #1D6354;
+    --color-verdeHover: #17433a;
+    --color-verdeMenta: #D1EFD9;
+    --color-azulSanitario: #B2EBF2;
+    --color-rojoMedico: #EF5350;
+    --color-naranjaAviso: #FFB300;
+    --fuente-principal: 'Inter', sans-serif;
+}
+
+/* Estilo general */
+body {
+    font-family: var(--fuente-principal);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: var(--color-verdeClinico);
+    color: var(--color-blancoPuro);
+    width: 100%;
+    padding: 30px;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;       
+    gap: 20px; 
+    max-width: 80em;
+}
+
+.logo {
+    width: 5em;               
+    height: auto;            
+    flex-shrink: 0;          
+}
+
+.titulo h1 {
+    line-height: 1.3;
+}
+
+/* Cuerpo */
+main {
+    background-color: var(--color-blancoSuave);
+    color: var(--color-negroPuro);
+    padding: 40px;
+}
+
+h2 {
+    color: var(--color-verdeClinico);
+    margin-bottom: 10px;
+}
+
+.btn-descarga {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--color-verdeClinico);
+    color: var(--color-blancoPuro);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-descarga:hover {
+    background-color: var(--color-verdeHover);
+}
+
+/* Símbolos */
+.container {
+    display: flex;
+    padding: 30px;
+}
+
+.card {
+    flex: 1;                       
+    text-align: center;            
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;        
+    align-items: center;           
+}
+
+.card:not(:first-child) {
+    border-left: 3px solid var(--color-negroPuro);
+}
+
+.icon {
+    width: 5em;                   
+    height: auto;
+    margin-bottom: 10px;           
+}
+
+.text {
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Descarga */
+.descarga {
+    background-color: var(--color-verdeMenta); 
+    border: 1px solid var(--color-grisMenu);   
+    border-left: 5px solid var(--color-verdeClinico); 
+    border-radius: 10px;                         
+    padding: 30px;                              
+    margin-top: 40px;                           
+    margin-bottom: 20px;
+    /* box-shadow: 0 4px 12px var(--color-negroPuro); */
+}
+
+.descarga h2 {
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+
+.descarga p {
+    margin-bottom: 20px;
+    color: var(--color-negroPuro);
+}
+
+/* Línea */
+.separador-linea {
+    border: 0;
+    height: 3px;
+    background: var(--color-negroPuro); 
+    margin: 40px auto; 
+    max-width: 90%;   
+}
+
+/* Contacto */
+
+.contacto-container {
+    display: flex;
+    gap: 60px;
+    align-items: stretch; 
+    padding: 40px;
+}
+
+.contacto-info {
+    margin-top: -20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column; 
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Mapa */
+.mapa-contenedor {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid var(--color-grisMenu); 
+}
+
+.mapa-contenedor iframe {
+    width: 100%; 
+    height: 250px;         
+    display: block;
+}
+
+/* Formulario */
+.contacto-form {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-group input, .form-group textarea {
+    padding: 10px;
+    border: 1px solid var(--color-grisMenu);
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    height: 232px;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-verdeHover);
+    box-shadow: 0 0 5px var(--color-verdeHover);
+}
+
+/* Botón de envío */
+.btn-enviar {
+    background-color: var(--color-verdeClinico);
+    color: var(--color-blancoPuro);
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-start; 
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.btn-enviar:hover {
+    background-color: var(--color-verdeHover);
+}
+
+/* Footer*/
+footer {
+    background-color: var(--color-verdeClinico);
+    color: var(--color-blancoPuro);
+    width: 100%;             
+    padding: 20px;       
+    text-align: center;
+    font-size: 0.9em;
+    line-height: 1.8;
+}
+
+.legal-notice {
+    opacity: 0.8;           
+}
+
+.credits li {
+    display: inline;        
+}
+
+.credits li:not(:last-child)::after {
+    content: "🌼";
+    margin-left: 1em;
+    margin-right: 1em;
+}
