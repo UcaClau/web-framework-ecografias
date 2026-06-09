@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Framework basado en Deep Learning para el análisis automatizado de ecografías cerebrales neonatales</title>
+    <title>Deep Brain</title>
     <link rel="stylesheet" href="index.css">
     <link rel="icon" type="image/png" href="imagenes/brain-logo.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
@@ -30,7 +30,7 @@
                     diferentes acciones sobre ecografías cerebrales neonatales. Este proyecto forma parte de un trabajo de fin 
                     grado (TFG) y tiene como objetivo principal facilitar el análisis de este tipo de imágenes médicas mediante 
                     técnicas de Deep Learning.
-                    Además, se busca proporcionar una herramienta útil para profesionales de la salud, ya sea para que se use
+                    Además, se busca proporcionar una herramienta útil para profesionales de la salud, ya sea 
                     como segunda opinión o para que se utilice como apoyo en la formación de nuevos profesionales.
                     <br><br>
                     Las funcionalidades principales del software son:
@@ -68,7 +68,7 @@
                     del trabajo realizado, así como de los desafíos enfrentados y las soluciones implementadas.
                 </p>
                 <a href="documentos/Apuntes_sobre_TFG.pdf" target="_blank" rel="noopener noreferrer" class="btn-descarga">
-                    Ver Documentación
+                    <i class="fas fa-download"></i> Ver Documentación
                 </a>
             </div>
         </section>
@@ -81,7 +81,7 @@
                     ¿Deseoso de probar el software? Puedes descargarlo pulsando el botón de abajo. 
                 </p>
                 <a href="documentos/Apuntes_sobre_TFG.pdf" target="_blank" rel="noopener noreferrer" class="btn-descarga">
-                    Descargar Programa
+                    <i class="fas fa-download"></i> Descargar Programa
                 </a>
             </div>
         </section>
@@ -91,8 +91,8 @@
 
     <!-- Contacto -->
     <section class="contacto-container">
+        <h2>Contacto</h2>
         <div class="contacto-info">
-            <h2>Contacto</h2>
             <p>Si tienes dudas sobre el framework o estás interesado en colaborar en la investigación, no dudes en escribirnos.</p>
             <div class="info-item">
                 <span class="material-symbols-outlined">mail</span>
@@ -110,21 +110,23 @@
         <form class="contacto-form" action="https://formsubmit.co/claudi.garciurba@alum.uca.es" method="POST">
             <input type="hidden" name="_next" value="https://ucaclau.github.io/web-framework-ecografias/?enviado=exito">
             <div class="form-group">
-                <label for="nombre">Nombre completo</label>
+                <label for="nombre">Nombre completo (*)</label>
                 <input type="text" id="nombre" name="nombre" required placeholder="Nombre">
             </div>
             
             <div class="form-group">
-                <label for="email">Correo electrónico</label>
+                <label for="email">Correo electrónico (*)</label>
                 <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
             </div>
             
             <div class="form-group">
-                <label for="mensaje">Mensaje / Consulta</label>
+                <label for="mensaje">Mensaje / Consulta (*)</label>
                 <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Escribe tu mensaje aquí..."></textarea>
             </div>
             
-            <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+            <button type="submit" class="btn-enviar">
+                Enviar Mensaje <i class="fas fa-paper-plane"></i>
+            </button>
         </form>
     </section>
 
@@ -135,8 +137,8 @@
             </p>
             
             <p class="legal-notice">
-                Todos los derechos reservados.<br>
-                Este software ha sido desarrollado con fines de investigación médica.<br> 
+                Todos los derechos reservados. 
+                Este software ha sido desarrollado con fines de investigación médica.
                 Prohibida su reproducción o distribución sin autorización expresa.
             </p>
             
@@ -148,6 +150,12 @@
                     <li>Eucalyp para el logo</li>
                     <li>Gajah Mada para los iconos</li>
                 </ul>
+            </div>
+            <div class="colaboradores">
+                <p>
+                    Colaboran:
+                </p>
+                <img src="imagenes/logoucaesi.jpg" alt="Logo de la uca" class="icon">
             </div>
         </div>
     </footer>
