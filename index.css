@@ -91,7 +91,7 @@ h2 {
 }
 
 .card {
-    flex: 1;                       
+    flex: 1;                        
     text-align: center;            
     padding: 10px 10px;
     display: flex;
@@ -104,7 +104,7 @@ h2 {
 }
 
 .icon {
-    width: 5em;                   
+    width: 5em;                    
     height: auto;
     margin-bottom: 10px;           
 }
@@ -119,9 +119,9 @@ h2 {
     background-color: var(--color-verdeMenta); 
     border: 1px solid var(--color-grisMenu);   
     border-left: 5px solid var(--color-verdeClinico); 
-    border-radius: 10px;                         
-    padding: 30px;                              
-    margin-top: 40px;                           
+    border-radius: 10px;                                         
+    padding: 30px;                                             
+    margin-top: 40px;                                           
     margin-bottom: 20px;
     /* box-shadow: 0 4px 12px var(--color-negroPuro); */
 }
@@ -288,4 +288,45 @@ footer {
 
 .banner-exito.mostrar {
     top: 20px; 
+}
+
+/* Asegurar adaptabilidad móvil completa sin scroll desbordado */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+    main, .contacto-container {
+        padding: 20px;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 10px;
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card:not(:first-child) {
+        border-left: none;
+        border-top: 3px solid var(--color-negroPuro);
+        padding-top: 20px;
+    }
+
+    .contacto-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .mapa-contenedor iframe {
+        height: 200px;
+    }
+
+    .btn-descarga, .btn-enviar {
+        width: 100%;
+    }
 }
