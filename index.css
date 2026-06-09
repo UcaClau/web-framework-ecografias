@@ -71,11 +71,17 @@ h2 {
     border-radius: 5px;
     display: inline-flex;
     align-items: center;
-    margin-right: 8px;
+    justify-content: center;
+    gap: 8px;
 }
 
 .btn-descarga:hover {
     background-color: var(--color-verdeHover);
+}
+
+.icon-btn {
+    font-size: 1.2rem !important; 
+    vertical-align: middle;
 }
 
 /* Símbolos */
@@ -140,6 +146,11 @@ h2 {
 }
 
 /* Contacto */
+.contacto-header {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
 
 .contacto-container {
     display: flex;
@@ -207,6 +218,11 @@ h2 {
     box-shadow: 0 0 5px var(--color-verdeHover);
 }
 
+/* Color rojo para los campos obligatorios */
+.asterisco-rojo {
+    color: var(--color-rojoMedico);
+}
+
 /* Botón de envío */
 .btn-enviar {
     background-color: var(--color-verdeClinico);
@@ -219,8 +235,10 @@ h2 {
     align-self: flex-start; 
     padding-left: 30px;
     padding-right: 30px;
+    display: inline-flex;
+    justify-content: center;
     align-items: center;
-    margin-right: 8px;
+    gap: 8px;
 }
 
 .btn-enviar:hover {
