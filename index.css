@@ -64,12 +64,14 @@ h2 {
 }
 
 .btn-descarga {
-    display: inline-block;
     padding: 10px 20px;
     background-color: var(--color-verdeClinico);
     color: var(--color-blancoPuro);
     text-decoration: none;
     border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 8px;
 }
 
 .btn-descarga:hover {
@@ -217,6 +219,8 @@ h2 {
     align-self: flex-start; 
     padding-left: 30px;
     padding-right: 30px;
+    align-items: center;
+    margin-right: 8px;
 }
 
 .btn-enviar:hover {
